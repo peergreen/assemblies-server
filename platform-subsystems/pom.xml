@@ -12,6 +12,8 @@
   <artifactId>platform-subsystems</artifactId>
   <packaging>platform</packaging>
 
+  <name>Peergreen Assemblies Subsystems</name>
+
   <dependencies>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>

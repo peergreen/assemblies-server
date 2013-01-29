@@ -12,6 +12,8 @@
   <artifactId>platform-light</artifactId>
   <packaging>platform</packaging>
 
+  <name>Peergreen Assemblies Light</name>
+
   <dependencies>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
