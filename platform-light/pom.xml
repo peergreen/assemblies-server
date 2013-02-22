@@ -138,6 +138,7 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
+          <!-- <usePack200>false</usePack200> -->
           <specification>FRAMEWORK</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
         </configuration>
