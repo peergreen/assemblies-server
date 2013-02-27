@@ -76,6 +76,7 @@
   <modules>
     <module>platform-light</module>
     <module>platform-subsystems</module>
+    <module>it</module>
   </modules>
 
 </project>
