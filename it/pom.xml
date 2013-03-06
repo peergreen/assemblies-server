@@ -108,4 +108,15 @@
     </dependency>
   </dependencies>
 
+  <dependencyManagement>
+    <!-- Force compendium version to latest otherwise we end up using the one from iPOJO which is quite old -->
+    <dependencies>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.compendium</artifactId>
+        <version>4.3.1</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
 </project>
