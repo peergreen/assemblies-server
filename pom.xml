@@ -74,6 +74,7 @@
   </repositories>
   
   <modules>
+    <module>abstract-platform</module>
     <module>platform-light</module>
     <module>platform-subsystems</module>
     <module>it</module>
