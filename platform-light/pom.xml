@@ -22,6 +22,7 @@
     <groupId>com.peergreen.platform</groupId>
     <artifactId>abstract-platform</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../abstract-platform/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
