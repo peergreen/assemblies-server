@@ -36,108 +36,129 @@
       <groupId>com.peergreen.deployment</groupId>
       <artifactId>deployment-api</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
       <artifactId>deployment-internal</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment.extension</groupId>
       <artifactId>extension-jonas</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment.scanner</groupId>
       <artifactId>peergreen-scanner</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.ipojo</artifactId>
       <version>1.8.6</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.ipojo.handler.whiteboard</artifactId>
       <version>1.6.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.util.i18n</groupId>
       <artifactId>i18n</artifactId>
       <version>2.0.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.util.log</groupId>
       <artifactId>log-bridge-jul</artifactId>
       <version>2.0.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.configadmin</artifactId>
       <version>1.6.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.resolver</artifactId>
       <version>0.1.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.shelbie</groupId>
       <artifactId>shelbie-core</artifactId>
       <version>${shelbie.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.shelbie.commands</groupId>
       <artifactId>shelbie-ipojo-commands</artifactId>
       <version>${shelbie.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.shelbie</groupId>
       <artifactId>shelbie-commands-builtin</artifactId>
       <version>${shelbie.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.shelbie.commands</groupId>
       <artifactId>shelbie-config-commands</artifactId>
       <version>${shelbie.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.shelbie</groupId>
       <artifactId>shelbie-startup-console</artifactId>
       <version>${shelbie.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.gogo.runtime</artifactId>
       <version>0.10.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.shelbie</groupId>
       <artifactId>gogo-commands</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ops4j.pax.url</groupId>
       <artifactId>pax-url-mvn</artifactId>
       <version>1.2.8</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.shelbie</groupId>
       <artifactId>deployment-commands</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>jar</type>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.shelbie</groupId>
       <artifactId>javavm-commands</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>com.peergreen.telnetd</groupId>
       <artifactId>telnetd</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
