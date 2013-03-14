@@ -128,7 +128,7 @@
             <startlevel>
               <level>2</level>
               <bundles>
-                <bundle>org.apache.aries.subsystem:org.apache.aries.subsystem</bundle>
+                <bundle>org.apache.aries.subsystem:org.apache.aries.subsystem:jar</bundle>
               </bundles>
             </startlevel>
           </levels>

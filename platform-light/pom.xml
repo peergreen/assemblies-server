@@ -41,6 +41,14 @@
           <!-- <usePack200>false</usePack200> -->
           <specification>FRAMEWORK</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
+          <levels>
+            <startlevel>
+              <level>2</level>
+              <bundles>
+                <bundle>org.ow2.shelbie:shelbie-startup-console:jar</bundle>
+              </bundles>
+            </startlevel>
+          </levels>
         </configuration>
       </plugin>
     </plugins>
