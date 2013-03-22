@@ -16,7 +16,7 @@
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>com.peergreen.platform</groupId>
     <artifactId>platform</artifactId>
@@ -106,7 +106,7 @@
       <version>0.9.20</version>
       <scope>test</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>org.osgi.core</artifactId>
@@ -134,5 +134,41 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <build>
+
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.7</version>
+        <executions>
+          <execution>
+            <id>reserve-ports</id>
+            <phase>process-test-resources</phase>
+            <goals>
+              <goal>reserve-network-port</goal>
+            </goals>
+            <configuration>
+              <portNames>
+                <portName>telnetd.port</portName>
+              </portNames>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.14</version>
+        <configuration>
+          <systemPropertyVariables>
+            <com.peergreen.telnetd.ports>${telnetd.port}</com.peergreen.telnetd.ports>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+    </plugins>
+
+  </build>
 
 </project>
