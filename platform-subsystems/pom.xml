@@ -122,6 +122,7 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
+          <platformName>Platform Subsystems</platformName>
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
           <levels>
