@@ -90,6 +90,14 @@
           <serverName>Peergreen Server Tomcat</serverName>
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
+          <levels>
+            <startlevel>
+              <level>2</level>
+              <bundles>
+                <bundle>com.peergreen.shelbie:shelbie-local-console:jar</bundle>
+              </bundles>
+            </startlevel>
+          </levels>
         </configuration>
       </plugin>
     </plugins>
