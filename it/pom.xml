@@ -18,13 +18,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <groupId>com.peergreen.platform</groupId>
-    <artifactId>platform</artifactId>
+    <groupId>com.peergreen.server</groupId>
+    <artifactId>server</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>platform-it</artifactId>
+  <artifactId>server-it</artifactId>
   <packaging>jar</packaging>
 
   <name>Peergreen Assemblies :: Integration tests</name>
@@ -49,10 +49,10 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Test platform -->
+    <!-- Test server -->
     <dependency>
-      <groupId>com.peergreen.platform</groupId>
-      <artifactId>platform-light</artifactId>
+      <groupId>com.peergreen.server</groupId>
+      <artifactId>peergreen-server-light</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

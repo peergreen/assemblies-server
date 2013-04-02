@@ -19,15 +19,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <groupId>com.peergreen.platform</groupId>
-    <artifactId>abstract-platform</artifactId>
+    <groupId>com.peergreen.server</groupId>
+    <artifactId>abstract-server</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>../abstract-platform/pom.xml</relativePath>
+    <relativePath>../abstract-server/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>platform-light</artifactId>
-  <packaging>platform</packaging>
+  <artifactId>peergreen-server-light</artifactId>
+  <packaging>peergreen-server</packaging>
 
   <name>Peergreen Assemblies Light</name>
 
@@ -38,7 +38,7 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
-          <platformName>Platform Light</platformName>
+          <serverName>Peergreen Server Light</serverName>
           <!-- <usePack200>false</usePack200> -->
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
