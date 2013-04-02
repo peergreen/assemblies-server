@@ -57,7 +57,9 @@
   <modules>
     <module>abstract-server</module>
     <module>server-light</module>
+<!--
     <module>server-subsystems</module>
+-->
     <module>it</module>
   </modules>
 
