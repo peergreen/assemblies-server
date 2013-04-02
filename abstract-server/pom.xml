@@ -158,7 +158,7 @@
     <dependency>
       <groupId>com.peergreen.newsfeed</groupId>
       <artifactId>peergreen-newsfeed</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
 
