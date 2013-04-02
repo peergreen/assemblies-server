@@ -61,4 +61,28 @@
     <module>it</module>
   </modules>
 
+  <repositories>
+    <repository>
+      <id>apache-snapshot</id>
+      <name>Apache Snapshot Repository</name>
+      <url>http://repository.apache.org/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+    <repository>
+      <id>peergreen.release</id>
+      <name>Peergreen Release Nexus</name>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>https://forge.peergreen.com/nexus/content/repositories/releases/</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
+
 </project>
