@@ -87,9 +87,9 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.felix</groupId>
+      <groupId>com.peergreen.resolver</groupId>
       <artifactId>org.apache.felix.resolver</artifactId>
-      <version>0.1.0-SNAPSHOT</version>
+      <version>0.1.0.r20130402</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
