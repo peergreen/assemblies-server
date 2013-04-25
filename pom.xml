@@ -55,6 +55,7 @@
   <modules>
     <module>abstract-server</module>
     <module>server-light</module>
+    <module>server-tomcat</module>
 <!--
     <module>server-subsystems</module>
 -->
