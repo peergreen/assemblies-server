@@ -55,6 +55,14 @@
       <artifactId>ow2-servlet-3.0-spec</artifactId>
       <version>1.0.12</version>
     </dependency>
+    
+    <!-- OSGi Enterprise -->
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.enterprise</artifactId>
+      <version>5.0.0</version>
+    </dependency>
+    
 
     <!-- Web base peergreen bundles -->
     <dependency>
@@ -62,8 +70,7 @@
       <artifactId>peergreen-webcontainer-base</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
-
-
+    
     <!-- Tomcat7 peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
