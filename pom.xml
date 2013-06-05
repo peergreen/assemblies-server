@@ -54,10 +54,10 @@
 
   <modules>
     <module>abstract-server</module>
+    <module>abstract-ee-server</module>
     <module>server-light</module>
-<!--
     <module>server-tomcat</module>
--->
+    <module>server-was</module>
 <!--
     <module>server-subsystems</module>
 -->

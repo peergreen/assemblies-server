@@ -25,10 +25,10 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>peergreen-server-tomcat</artifactId>
+  <artifactId>peergreen-server-was</artifactId>
   <packaging>peergreen-server</packaging>
 
-  <name>Peergreen Assemblies Tomcat</name>
+  <name>Peergreen Assemblies Web Application Server</name>
 
   <dependencies>
 
@@ -36,20 +36,39 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-el-2.2-spec</artifactId>
-      <version>1.0.12</version>
+      <version>1.0.13</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jsp-2.2-spec</artifactId>
-      <version>1.0.12</version>
+      <version>1.0.13</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-servlet-3.0-spec</artifactId>
-      <version>1.0.12</version>
+      <version>1.0.13</version>
     </dependency>
-    
-    <!-- WEB metadata-->
+
+    <!-- JTA and JCA (required by TX XATerminator, etc) -->
+    <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-connector-1.6-spec</artifactId>
+      <version>1.0.13</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-jta-1.1-spec</artifactId>
+      <version>1.0.13</version>
+    </dependency>
+
+    <!-- JPA -->
+    <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-jpa-2.0-spec</artifactId>
+      <version>1.0.13</version>
+    </dependency>
+
+    <!-- WEB -->
     <dependency>
       <groupId>org.ow2.util.metadata</groupId>
       <artifactId>metadata-war-impl</artifactId>
@@ -61,20 +80,60 @@
       <artifactId>metadata-ws-impl</artifactId>
       <version>3.0.0-M1-SNAPSHOT</version>
     </dependency>
-    
+
     <!-- Web base peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-base</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
-    
+
     <!-- Tomcat7 peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-tomcat7</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
+
+    <!-- Transaction/JOTM bundle -->
+    <dependency>
+      <groupId>org.ow2.jotm</groupId>
+      <artifactId>jotm-core</artifactId>
+      <version>2.3.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.peergreen.transaction</groupId>
+      <artifactId>peergreen-transaction-jotm</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- JPA 2.0 EE Integration -->
+    <dependency>
+      <groupId>org.ow2.easybeans.persistence</groupId>
+      <artifactId>easybeans-persistence-osgi</artifactId>
+      <version>3.0.0-M1-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.peergreen.persistence</groupId>
+      <artifactId>peergreen-persistence-easybeans</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.peergreen.persistence</groupId>
+      <artifactId>peergreen-persistence-easybeans-extensions-webapplication</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- Persistence Provider -->
+    <dependency>
+      <groupId>org.ow2.easybeans.persistence</groupId>
+      <artifactId>easybeans-persistence-eclipselink-2.4.x</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+
 
   </dependencies>
 
@@ -85,21 +144,18 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
-          <serverName>Peergreen Server Tomcat</serverName>
+          <serverName>Peergreen Web Application Server</serverName>
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
-          <levels>
-            <startlevel>
-              <level>2</level>
-              <bundles>
-                <bundle>com.peergreen.shelbie:shelbie-local-console:jar</bundle>
-              </bundles>
-            </startlevel>
-          </levels>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>2.3.7</version>
+      </plugin>
+      
     </plugins>
   </build>
-
 
 </project>
