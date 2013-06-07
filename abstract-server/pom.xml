@@ -43,12 +43,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.peergreen.deployment</groupId>
-      <artifactId>processor-handler</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>com.peergreen.deployment.extension</groupId>
       <artifactId>extension-jonas</artifactId>
       <version>1.0.1-SNAPSHOT</version>
