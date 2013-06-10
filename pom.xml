@@ -55,7 +55,7 @@
   <modules>
     <module>abstract-server</module>
     <module>abstract-ee-server</module>
-    <module>server-light</module>
+    <module>peergreen-kernel</module>
     <module>server-tomcat</module>
     <module>server-was</module>
 <!--

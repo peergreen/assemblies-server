@@ -24,10 +24,10 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>peergreen-server-light</artifactId>
+  <artifactId>peergreen-kernel</artifactId>
   <packaging>peergreen-server</packaging>
 
-  <name>Peergreen Assemblies Light</name>
+  <name>Peergreen Kernel</name>
 
   <build>
     <plugins>
@@ -36,7 +36,6 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
-          <serverName>Peergreen Server Light</serverName>
           <!-- <usePack200>false</usePack200> -->
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
