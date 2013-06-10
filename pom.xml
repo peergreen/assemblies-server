@@ -58,9 +58,7 @@
     <module>peergreen-kernel</module>
     <module>server-tomcat</module>
     <module>server-was</module>
-<!--
-    <module>server-subsystems</module>
--->
+    <module>peergreen-server-osgiee</module>
     <module>it</module>
   </modules>
 
