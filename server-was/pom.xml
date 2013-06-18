@@ -165,6 +165,11 @@
       <version>1.0.13</version>
     </dependency>
     <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-validation-1.1-spec</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>org.jboss.spec.javax.annotation</groupId>
       <artifactId>jboss-annotations-api_1.2_spec</artifactId>
       <version>1.0.0.Alpha1</version>
@@ -174,11 +179,6 @@
       <artifactId>javax.ws.rs-api</artifactId>
       <version>2.0</version>
     </dependency>
-    <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-      <version>1.1.0.Final</version>
-    </dependency>           
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
