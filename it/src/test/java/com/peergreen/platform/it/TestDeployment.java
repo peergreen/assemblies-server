@@ -18,6 +18,7 @@ package com.peergreen.platform.it;
 
 import static org.ops4j.pax.exam.CoreOptions.junitBundles;
 import static org.ops4j.pax.exam.CoreOptions.options;
+import static org.ops4j.pax.exam.CoreOptions.systemProperty;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -26,6 +27,7 @@ import java.util.Collections;
 
 import javax.inject.Inject;
 
+import org.apache.felix.ipojo.extender.queue.QueueService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
@@ -37,8 +39,12 @@ import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.PaxExam;
 import org.ops4j.pax.exam.spi.reactors.ExamReactorStrategy;
 import org.ops4j.pax.exam.spi.reactors.PerClass;
+import org.ops4j.pax.exam.util.Filter;
 import org.osgi.framework.BundleContext;
+import org.slf4j.LoggerFactory;
 
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.Logger;
 import com.peergreen.deployment.Artifact;
 import com.peergreen.deployment.ArtifactBuilder;
 import com.peergreen.deployment.ArtifactProcessRequest;
@@ -68,6 +74,12 @@ public class TestDeployment {
     @Inject
     private ArtifactModelManager artifactModelManager;
 
+    @Inject
+    @Filter("(ipojo.queue.mode=async)")
+    private QueueService queueService;
+
+    private StabilityHelper helper;
+
     private URI fileURIBundle;
 
     private Artifact artifact;
@@ -75,7 +87,13 @@ public class TestDeployment {
 
     @Configuration
     public Option[] config() {
-        return options(junitBundles());
+        // Reduce log level.
+        Logger root = (Logger) LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
+        root.setLevel(Level.INFO);
+
+        return options(junitBundles(),
+                       systemProperty("org.ops4j.pax.logging.DefaultServiceLog.level").value("WARN")
+        );
     }
 
     @Before
@@ -83,8 +101,8 @@ public class TestDeployment {
         // M2 URI of ow2 util file
         this.fileURIBundle = new URI("mvn:org.ow2.util.file/file/2.0.0");
         this.artifact = artifactBuilder.build("file-bundle.jar", fileURIBundle);
+        helper = new StabilityHelper(queueService);
     }
-
 
     @Test
     public void checkInject() {
@@ -95,7 +113,9 @@ public class TestDeployment {
     }
 
     @Test
-    public void test1DeployBundle() {
+    public void test1DeployBundle() throws Exception {
+
+        helper.waitForStability(3000);
 
         // Check not here
         Collection<URI> uris = artifactModelManager.getDeployedRootURIs();
@@ -119,7 +139,10 @@ public class TestDeployment {
 
 
     @Test
-    public void test2UndeployBundle() throws URISyntaxException {
+    public void test2UndeployBundle() throws Exception {
+
+        helper.waitForStability(3000);
+
         // Check here
         Collection<URI> uris = artifactModelManager.getDeployedRootURIs();
         Assert.assertTrue(uris.contains(fileURIBundle));
@@ -140,5 +163,7 @@ public class TestDeployment {
         Assert.assertEquals(beforeBundlesLength - 1, afterBundlesLength);
 
     }
+
+
 
 }

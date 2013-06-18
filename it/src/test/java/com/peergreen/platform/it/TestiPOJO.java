@@ -16,8 +16,10 @@
 package com.peergreen.platform.it;
 
 
+import static java.lang.String.format;
 import static org.ops4j.pax.exam.CoreOptions.junitBundles;
 import static org.ops4j.pax.exam.CoreOptions.options;
+import static org.ops4j.pax.exam.CoreOptions.systemProperty;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -28,6 +30,7 @@ import javax.inject.Inject;
 import org.apache.felix.ipojo.ComponentInstance;
 import org.apache.felix.ipojo.Factory;
 import org.apache.felix.ipojo.architecture.Architecture;
+import org.apache.felix.ipojo.extender.queue.QueueService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
@@ -39,9 +42,15 @@ import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.PaxExam;
 import org.ops4j.pax.exam.spi.reactors.ExamReactorStrategy;
 import org.ops4j.pax.exam.spi.reactors.PerClass;
+import org.ops4j.pax.exam.util.Filter;
+import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.InvalidSyntaxException;
 import org.osgi.framework.ServiceReference;
+import org.slf4j.LoggerFactory;
+
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.Logger;
 
 /**
  * Test that factories and instances of iPOJO are all valid
@@ -55,13 +64,27 @@ public class TestiPOJO {
     @Inject
     private BundleContext bundleContext;
 
+    @Inject
+    @Filter("(ipojo.queue.mode=async)")
+    private QueueService queueService;
+
+    private StabilityHelper helper;
+
     @Configuration
     public Option[] config() {
-        return options(junitBundles());
+        // Reduce log level.
+        Logger root = (Logger) LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
+        root.setLevel(Level.INFO);
+
+        return options(
+                junitBundles(),
+                systemProperty("org.ops4j.pax.logging.DefaultServiceLog.level").value("WARN")
+        );
     }
 
     @Before
     public void init() throws URISyntaxException {
+        helper = new StabilityHelper(queueService);
     }
 
 
@@ -71,7 +94,10 @@ public class TestiPOJO {
     }
 
     @Test
-    public void testFactories() throws InvalidSyntaxException {
+    public void testFactories() throws Exception {
+
+        helper.waitForStability(3000);
+
         List<Factory> factories = new ArrayList<Factory>();
         // get all factories
         ServiceReference<Factory>[] serviceReferenceFactories = (ServiceReference<Factory>[]) bundleContext.getAllServiceReferences(Factory.class.getName(), null);
@@ -88,7 +114,7 @@ public class TestiPOJO {
         // Now check state
         for (Factory factory : factories) {
             if (Factory.VALID != factory.getState()) {
-                errorMessage = errorMessage.concat(String.format("Factory %s is invalid", factory.getName())).concat("\n");
+                errorMessage = errorMessage.concat(format("Factory %s is invalid", factory.getName())).concat("\n");
             }
         }
 
@@ -97,12 +123,15 @@ public class TestiPOJO {
 
 
     @Test
-    public void testInstances() throws InvalidSyntaxException {
+    public void testInstances() throws Exception {
+
+        helper.waitForStability(3000);
+
         List<Architecture> instances = new ArrayList<Architecture>();
         // get all instances
-        ServiceReference<Architecture>[] serviceReferenceFactories = (ServiceReference<Architecture>[]) bundleContext.getAllServiceReferences(Architecture.class.getName(), null);
-        for (ServiceReference<Architecture> serviceReferenceFactory : serviceReferenceFactories) {
-            Architecture instance = bundleContext.getService(serviceReferenceFactory);
+        ServiceReference<Architecture>[] architectureReferences = (ServiceReference<Architecture>[]) bundleContext.getAllServiceReferences(Architecture.class.getName(), null);
+        for (ServiceReference<Architecture> reference : architectureReferences) {
+            Architecture instance = bundleContext.getService(reference);
             instances.add(instance);
         }
 
@@ -114,12 +143,11 @@ public class TestiPOJO {
         // Now check state
         for (Architecture instance : instances) {
             if (ComponentInstance.VALID != instance.getInstanceDescription().getState()) {
-                errorMessage = errorMessage.concat(String.format("Factory %s is invalid", instance.getInstanceDescription().getName())).concat("\n");
+                errorMessage = errorMessage.concat(format("Factory %s is invalid", instance.getInstanceDescription().getName())).concat("\n");
             }
         }
 
         Assert.assertEquals(errorMessage, 0, errorMessage.length());
     }
-
 
 }
