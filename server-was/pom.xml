@@ -127,10 +127,35 @@
     </dependency>
 
     <!-- Persistence Provider -->
+    <dependency> 
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.2</version>
+    </dependency>
+    <dependency> 
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.2</version>
+    </dependency>
+    <dependency> 
+      <groupId>org.ow2.util.bundles</groupId>
+      <artifactId>javassist-3.14.0-GA</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency> 
+      <groupId>org.ow2.util.bundles</groupId>
+      <artifactId>commons-collections-3.2.1</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency> 
+      <groupId>org.ow2.util.bundles</groupId>
+      <artifactId>commons-logging-1.1.1</artifactId>
+      <version>1.0.0</version>
+    </dependency>
     <dependency>
       <groupId>org.ow2.easybeans.persistence</groupId>
-      <artifactId>easybeans-persistence-eclipselink-2.4.x</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <artifactId>easybeans-persistence-hibernate-4.1</artifactId>
+      <version>1.0.2-SNAPSHOT</version>
     </dependency>
 
     <!-- jax rs -->
