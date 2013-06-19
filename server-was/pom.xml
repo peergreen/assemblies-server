@@ -30,6 +30,11 @@
 
   <name>Peergreen Assemblies Web Application Server</name>
 
+  <properties>
+    <peergreen-transaction.version>1.0.0-SNAPSHOT</peergreen-transaction.version>
+    <peergreen-persistence.version>1.0.0-SNAPSHOT</peergreen-persistence.version>
+  </properties>
+
   <dependencies>
 
     <!-- Web technologies API -->
@@ -104,12 +109,12 @@
     <dependency>
       <groupId>com.peergreen.transaction</groupId>
       <artifactId>peergreen-transaction-jotm-core</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>${peergreen-transaction.version}</version>
     </dependency>
     <dependency>
       <groupId>com.peergreen.transaction</groupId>
       <artifactId>peergreen-transaction-jotm-extensions-naming</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>${peergreen-transaction.version}</version>
     </dependency>
 
     <!-- JPA 2.0 EE Integration -->
@@ -122,13 +127,13 @@
     <dependency>
       <groupId>com.peergreen.persistence</groupId>
       <artifactId>peergreen-persistence-easybeans</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>${peergreen-persistence.version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.peergreen.persistence</groupId>
       <artifactId>peergreen-persistence-easybeans-extensions-webapplication</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>${peergreen-persistence.version}</version>
     </dependency>
 
     <!-- Persistence Provider -->

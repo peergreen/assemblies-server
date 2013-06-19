@@ -28,18 +28,21 @@
 
   <name>Peergreen Assemblies Abstract</name>
 
+  <properties>
+    <deployment.version>1.0.1</deployment.version>
+  </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
       <artifactId>deployment-api</artifactId>
-      <version>1.0.1</version>
+      <version>${deployment.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
       <artifactId>deployment-internal</artifactId>
-      <version>1.0.1</version>
+      <version>${deployment.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>

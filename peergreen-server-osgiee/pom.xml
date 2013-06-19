@@ -123,7 +123,7 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-annotation-1.1-spec</artifactId>
-      <version>1.0.12</version>
+      <version>1.0.13</version>
     </dependency>
 
     <!-- Web technologies API -->
