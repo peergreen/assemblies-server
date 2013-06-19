@@ -97,7 +97,7 @@ public class TestiPOJO {
     @Test
     public void testFactories() throws Exception {
 
-        helper.waitForStability(3000);
+        helper.waitForStability(5000);
 
         List<Factory> factories = new ArrayList<Factory>();
         // get all factories
@@ -127,7 +127,7 @@ public class TestiPOJO {
     @Test
     public void testInstances() throws Exception {
 
-        helper.waitForStability(3000);
+        helper.waitForStability(5000);
 
         List<Architecture> instances = new ArrayList<Architecture>();
         // get all instances
