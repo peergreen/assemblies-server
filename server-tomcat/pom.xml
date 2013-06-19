@@ -36,44 +36,44 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-el-2.2-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jsp-2.2-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-servlet-3.0-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
     </dependency>
     
     <!-- WEB metadata-->
     <dependency>
       <groupId>org.ow2.util.metadata</groupId>
       <artifactId>metadata-war-impl</artifactId>
-      <version>3.0.0-M1-SNAPSHOT</version>
+      <version>3.0.0-M1</version>
     </dependency>
 
     <dependency>
       <groupId>org.ow2.util.metadata</groupId>
       <artifactId>metadata-ws-impl</artifactId>
-      <version>3.0.0-M1-SNAPSHOT</version>
+      <version>3.0.0-M1</version>
     </dependency>
     
     <!-- Web base peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-base</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
     </dependency>
     
     <!-- Tomcat7 peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-tomcat7</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
     </dependency>
 
   </dependencies>
