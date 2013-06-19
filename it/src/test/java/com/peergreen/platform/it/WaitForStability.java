@@ -64,7 +64,7 @@ public class WaitForStability {
     @Before
     public void init() throws Exception {
         helper = new StabilityHelper(queueService);
-        helper.waitForStability(5000);
+        helper.waitForStability();
     }
 
     /**
