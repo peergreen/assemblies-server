@@ -33,25 +33,25 @@
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
       <artifactId>deployment-api</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
       <artifactId>deployment-internal</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment.extension</groupId>
       <artifactId>extension-jonas</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.deployment.scanner</groupId>
       <artifactId>peergreen-scanner</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
