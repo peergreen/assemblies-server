@@ -23,6 +23,7 @@ import static org.ops4j.pax.exam.CoreOptions.systemProperty;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -100,7 +101,7 @@ public class TestiPOJO {
 
         List<Factory> factories = new ArrayList<Factory>();
         // get all factories
-        ServiceReference<Factory>[] serviceReferenceFactories = (ServiceReference<Factory>[]) bundleContext.getAllServiceReferences(Factory.class.getName(), null);
+        Collection<ServiceReference<Factory>> serviceReferenceFactories = bundleContext.getServiceReferences(Factory.class, null);
         for (ServiceReference<Factory> serviceReferenceFactory : serviceReferenceFactories) {
             Factory factory = bundleContext.getService(serviceReferenceFactory);
             factories.add(factory);
@@ -109,16 +110,17 @@ public class TestiPOJO {
         // check we have factories
         Assert.assertTrue(factories.size() > 5);
 
-        String errorMessage = "";
-
+        StringBuilder sb = new StringBuilder();
         // Now check state
         for (Factory factory : factories) {
             if (Factory.VALID != factory.getState()) {
-                errorMessage = errorMessage.concat(format("Factory %s is invalid", factory.getName())).concat("\n");
+                sb.append(format("Factory %s is invalid%n", factory.getName()));
+                sb.append(format("  missing handlers: %s%n", factory.getMissingHandlers()));
+                sb.append("----------------------------------------------------------------%n");
             }
         }
 
-        Assert.assertEquals(errorMessage, 0, errorMessage.length());
+        Assert.assertEquals(sb.toString(), 0, sb.length());
     }
 
 
@@ -129,7 +131,7 @@ public class TestiPOJO {
 
         List<Architecture> instances = new ArrayList<Architecture>();
         // get all instances
-        ServiceReference<Architecture>[] architectureReferences = (ServiceReference<Architecture>[]) bundleContext.getAllServiceReferences(Architecture.class.getName(), null);
+        Collection<ServiceReference<Architecture>> architectureReferences = bundleContext.getServiceReferences(Architecture.class, null);
         for (ServiceReference<Architecture> reference : architectureReferences) {
             Architecture instance = bundleContext.getService(reference);
             instances.add(instance);
@@ -138,16 +140,17 @@ public class TestiPOJO {
         // check we have instances
         Assert.assertTrue(instances.size() > 5);
 
-        String errorMessage = "";
-
+        StringBuilder sb = new StringBuilder();
         // Now check state
         for (Architecture instance : instances) {
             if (ComponentInstance.VALID != instance.getInstanceDescription().getState()) {
-                errorMessage = errorMessage.concat(format("Factory %s is invalid", instance.getInstanceDescription().getName())).concat("\n");
+                sb.append(format("Instance %s is invalid%n", instance.getInstanceDescription().getName()));
+                sb.append(format("%s%n", instance.getInstanceDescription().getDescription()));
+                sb.append("----------------------------------------------------------------%n");
             }
         }
 
-        Assert.assertEquals(errorMessage, 0, errorMessage.length());
+        Assert.assertEquals(sb.toString(), 0, sb.length());
     }
 
 }
