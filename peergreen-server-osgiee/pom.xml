@@ -119,6 +119,30 @@
       <scope>provided</scope>
     </dependency>
 
+    <!-- JTA and JCA (required by TX XATerminator, etc) -->
+    <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-connector-1.6-spec</artifactId>
+      <version>1.0.13</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-jta-1.1-spec</artifactId>
+      <version>1.0.13</version>
+    </dependency>
+
+    <!-- Transaction/JOTM bundle -->
+    <dependency>
+      <groupId>org.ow2.jotm</groupId>
+      <artifactId>jotm-core</artifactId>
+      <version>2.3.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.peergreen.transaction</groupId>
+      <artifactId>peergreen-transaction-jotm-core</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
   </dependencies>
 
   <build>
