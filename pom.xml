@@ -59,6 +59,7 @@
     <module>server-tomcat</module>
     <module>server-was</module>
     <module>peergreen-server-osgiee</module>
+    <module>peergreen-embedded</module>
     <module>it</module>
   </modules>
 
