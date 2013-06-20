@@ -159,14 +159,14 @@
     <dependency>
       <groupId>com.peergreen.newsfeed</groupId>
       <artifactId>peergreen-newsfeed</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>com.peergreen.shelbie</groupId>
       <artifactId>newsfeed-commands</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
     
