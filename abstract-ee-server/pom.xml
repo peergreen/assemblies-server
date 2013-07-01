@@ -62,11 +62,11 @@
       <version>1.0.0</version>
     </dependency>
 
-    <!-- Injection -->
+    <!-- Injection/LifeCycle callback -->
     <dependency>
-      <groupId>com.peergreen.injection</groupId>
-      <artifactId>injection-internal</artifactId>
-      <version>1.0.0</version>
+      <groupId>com.peergreen.metadata.adapter</groupId>
+      <artifactId>metadata-adapter-internal</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
     </dependency>
 
     <!-- OW2 Archive -->

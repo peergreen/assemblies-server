@@ -29,7 +29,7 @@
   <name>Peergreen Assemblies Abstract</name>
 
   <properties>
-    <deployment.version>1.0.1</deployment.version>
+    <deployment.version>1.0.2-SNAPSHOT</deployment.version>
   </properties>
 
   <dependencies>
