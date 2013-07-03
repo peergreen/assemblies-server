@@ -238,7 +238,7 @@
         <extensions>true</extensions>
         <configuration>
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
-          <framework>org.eclipse.tycho/org.eclipse.osgi/3.8.1.v20120830-144521</framework>
+          <framework>org.eclipse.tycho/org.eclipse.osgi/3.9.0.v20130529-1710</framework>
           <levels>
             <startlevel>
               <level>2</level>
