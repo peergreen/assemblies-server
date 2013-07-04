@@ -122,6 +122,7 @@
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-annotation-1.1-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Web technologies API -->
@@ -129,21 +130,25 @@
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-el-2.2-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jsp-2.2-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-servlet-3.0-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.osgi</groupId>
       <artifactId>ow2-httpservice-1.2-spec</artifactId>
       <version>1.0.0</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- JTA and JCA (required by TX XATerminator, etc) -->
@@ -151,16 +156,19 @@
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-connector-1.6-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jta-1.1-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.osgi</groupId>
       <artifactId>ow2-jdbc-service-1.0-spec</artifactId>
       <version>1.0.13</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Injection -->
@@ -168,16 +176,19 @@
       <groupId>org.ow2.util.archive</groupId>
       <artifactId>archive-api</artifactId>
       <version>2.0.1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.util.scan</groupId>
       <artifactId>scan-api</artifactId>
       <version>3.0.0-M1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.metadata.adapter</groupId>
       <artifactId>metadata-adapter-api</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Web base peergreen bundles -->
@@ -185,16 +196,19 @@
       <groupId>com.peergreen.naming</groupId>
       <artifactId>peergreen-naming-api</artifactId>
       <version>1.0.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.util.metadata</groupId>
       <artifactId>metadata-war-api</artifactId>
       <version>3.0.0-M1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-base</artifactId>
       <version>1.0.0</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Tomcat7 peergreen bundles -->
@@ -202,6 +216,7 @@
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-tomcat7</artifactId>
       <version>1.0.1-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Transaction/JOTM bundle -->
@@ -209,11 +224,13 @@
       <groupId>org.ow2.jotm</groupId>
       <artifactId>jotm-core</artifactId>
       <version>2.3.1-M1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.transaction</groupId>
       <artifactId>peergreen-transaction-jotm-core</artifactId>
       <version>1.0.0</version>
+      <scope>provided</scope>
     </dependency>
 
     <!--  H2 -->
@@ -221,11 +238,13 @@
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <version>1.3.172</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.db</groupId>
       <artifactId>peergreen-db-h2</artifactId>
       <version>1.0.0</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
