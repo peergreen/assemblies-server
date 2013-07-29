@@ -20,7 +20,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({WaitForStability.class, CheckiPOJO.class, CheckDeployment.class})
+@SuiteClasses({Setup.class, CheckiPOJO.class, CheckDeployment.class})
 public class TestSuite {
 
 }
