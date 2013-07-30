@@ -38,7 +38,7 @@
 
   <properties>
     <felix.version>4.0.3</felix.version>
-    <shelbie.version>2.0.0-M3</shelbie.version>
+    <shelbie.version>2.0.0-M4-SNAPSHOT</shelbie.version>
   </properties>
 
   <build>
@@ -68,6 +68,14 @@
       <id>apache-snapshot</id>
       <name>Apache Snapshot Repository</name>
       <url>http://repository.apache.org/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+    <repository>
+      <id>ow2-snapshot</id>
+      <name>OW2 Snapshot Repository</name>
+      <url>http://repository.ow2.org/nexus/content/repositories/snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>

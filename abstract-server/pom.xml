@@ -106,8 +106,8 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.ow2.shelbie</groupId>
-      <artifactId>shelbie-commands-builtin</artifactId>
+      <groupId>org.ow2.shelbie.commands</groupId>
+      <artifactId>shelbie-builtin-commands</artifactId>
       <version>${shelbie.version}</version>
       <scope>provided</scope>
     </dependency>
