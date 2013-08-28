@@ -152,31 +152,31 @@
     </dependency>
 
     <!-- Persistence Provider -->
-    <dependency> 
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.2</version>
       <scope>provided</scope>
     </dependency>
-    <dependency> 
+    <dependency>
       <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
+      <artifactId>slf4j-jdk14</artifactId>
       <version>1.7.2</version>
       <scope>provided</scope>
     </dependency>
-    <dependency> 
+    <dependency>
       <groupId>org.ow2.util.bundles</groupId>
       <artifactId>javassist-3.14.0-GA</artifactId>
       <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
-    <dependency> 
+    <dependency>
       <groupId>org.ow2.util.bundles</groupId>
       <artifactId>commons-collections-3.2.1</artifactId>
       <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
-    <dependency> 
+    <dependency>
       <groupId>org.ow2.util.bundles</groupId>
       <artifactId>commons-logging-1.1.1</artifactId>
       <version>1.0.0</version>
