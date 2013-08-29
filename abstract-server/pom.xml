@@ -191,7 +191,7 @@
     <dependency>
       <groupId>com.peergreen.shelbie</groupId>
       <artifactId>shelbie-local-console</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     
