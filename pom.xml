@@ -38,7 +38,7 @@
 
   <properties>
     <felix.version>4.0.3</felix.version>
-    <shelbie.version>2.0.0-M4-SNAPSHOT</shelbie.version>
+    <shelbie.version>2.0.0-RC1</shelbie.version>
   </properties>
 
   <build>
