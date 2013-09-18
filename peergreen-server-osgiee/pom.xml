@@ -121,7 +121,7 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-annotation-1.1-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -129,19 +129,19 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-el-2.2-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jsp-2.2-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-servlet-3.0-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -155,19 +155,19 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-connector-1.6-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jta-1.1-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.spec.osgi</groupId>
       <artifactId>ow2-jdbc-service-1.0-spec</artifactId>
-      <version>1.0.13</version>
+      <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
 

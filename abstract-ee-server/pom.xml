@@ -28,10 +28,6 @@
   <packaging>pom</packaging>
 
   <name>Peergreen Common stuff for EE server</name>
-  <properties>
-    <ow2-spec.version>1.0.13</ow2-spec.version>
-  </properties>
-
 
   <dependencies>
 
