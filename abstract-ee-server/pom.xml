@@ -88,7 +88,7 @@
     <dependency>
       <groupId>org.ow2.util.scan</groupId>
       <artifactId>scan-impl</artifactId>
-      <version>3.0.0-M1</version>
+      <version>${scan.version}</version>
       <scope>provided</scope>
     </dependency>
 
