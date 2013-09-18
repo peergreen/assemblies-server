@@ -28,10 +28,6 @@
 
   <name>Peergreen Assemblies Abstract</name>
 
-  <properties>
-    <deployment.version>1.0.2-SNAPSHOT</deployment.version>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>com.peergreen.deployment</groupId>
