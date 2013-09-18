@@ -245,7 +245,7 @@
     <dependency>
       <groupId>com.peergreen.db</groupId>
       <artifactId>peergreen-db-h2</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>${peergreen-db-h2.version}</version>
       <scope>provided</scope>
     </dependency>
 
