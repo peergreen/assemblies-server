@@ -39,6 +39,7 @@
   <properties>
     <felix.version>4.0.3</felix.version>
     <shelbie.version>2.0.0-RC1</shelbie.version>
+    <jndi-service.version>1.0.1-SNAPSHOT</jndi-service.version>
   </properties>
 
   <build>

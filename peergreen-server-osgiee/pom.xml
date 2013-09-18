@@ -113,7 +113,7 @@
     <dependency>
       <groupId>com.peergreen.jndi</groupId>
       <artifactId>jndi-service</artifactId>
-      <version>1.0.0</version>
+      <version>${jndi-service.version}</version>
       <scope>provided</scope>
     </dependency>
 
