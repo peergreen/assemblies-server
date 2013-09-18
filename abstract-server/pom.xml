@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.ipojo</artifactId>
-      <version>1.10.1</version>
+      <version>1.10.1-peergreen</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
