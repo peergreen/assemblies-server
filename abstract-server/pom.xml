@@ -52,6 +52,12 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>com.peergreen.deployment.extension</groupId>
+      <artifactId>extension-peergreen</artifactId>
+      <version>1.0.2-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>com.peergreen.deployment.scanner</groupId>
       <artifactId>peergreen-scanner</artifactId>
       <version>1.0.2-SNAPSHOT</version>
