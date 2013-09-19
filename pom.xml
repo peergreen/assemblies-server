@@ -46,7 +46,7 @@
     <jotm-core.version>2.3.1-M1</jotm-core.version>
     <slf4j.version>1.7.2</slf4j.version>
     <scan.version>3.0.0-M2</scan.version>
-    <peergreen-db-h2.version>1.0.1-SNAPSHOT</peergreen-db-h2.version>
+    <peergreen-db-h2.version>1.0.1</peergreen-db-h2.version>
     <deployment.version>1.0.2-SNAPSHOT</deployment.version>
     <deployment-extension.version>1.0.2-SNAPSHOT</deployment-extension.version>
   </properties>
