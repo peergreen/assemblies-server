@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  - Copyright 2013 Peergreen S.A.S.
-  - Licensed under the Apache License, Version 2.0 (the "License");
-  - you may not use this file except in compliance with the License.
-  - You may obtain a copy of the License at
-  -
-  -    http://www.apache.org/licenses/LICENSE-2.0
+  - Peergreen S.A.S. All rights reserved.
+  - Proprietary and confidential.
   -
   - Unless required by applicable law or agreed to in writing, software
   - distributed under the License is distributed on an "AS IS" BASIS,
@@ -50,7 +46,7 @@
       <version>${ow2-spec.version}</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <!-- WEB metadata-->
     <dependency>
       <groupId>org.ow2.util.metadata</groupId>
@@ -65,7 +61,7 @@
       <version>${javaee-metadata.version}</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <!-- Web base peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
@@ -73,7 +69,7 @@
       <version>1.0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <!-- Tomcat7 peergreen bundles -->
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
