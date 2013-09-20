@@ -66,7 +66,7 @@
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-base</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>${webcontainer-base.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -74,7 +74,7 @@
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-tomcat7</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>${webcontainer-tomcat7.version}</version>
       <scope>provided</scope>
     </dependency>
 

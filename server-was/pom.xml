@@ -25,11 +25,6 @@
 
   <name>Peergreen Assemblies Web Application Server</name>
 
-  <properties>
-    <peergreen-transaction.version>1.0.1-SNAPSHOT</peergreen-transaction.version>
-    <peergreen-persistence.version>1.0.1-SNAPSHOT</peergreen-persistence.version>
-  </properties>
-
   <dependencies>
 
     <!-- Web technologies API -->
@@ -93,7 +88,7 @@
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-base</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>${webcontainer-base.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -101,7 +96,7 @@
     <dependency>
       <groupId>com.peergreen.webcontainer</groupId>
       <artifactId>peergreen-webcontainer-tomcat7</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>${webcontainer-tomcat7.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -129,7 +124,7 @@
     <dependency>
       <groupId>org.ow2.easybeans.persistence</groupId>
       <artifactId>easybeans-persistence-osgi</artifactId>
-      <version>3.0.0-M2-SNAPSHOT</version>
+      <version>3.0.0-M2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -181,7 +176,7 @@
     <dependency>
       <groupId>org.ow2.easybeans.persistence</groupId>
       <artifactId>easybeans-persistence-hibernate-4.1</artifactId>
-      <version>1.0.3-SNAPSHOT</version>
+      <version>${easybeans-persistence-hibernate-4.1.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -227,7 +222,7 @@
     <dependency>
       <groupId>com.peergreen.jaxrs</groupId>
       <artifactId>peergreen-jaxrs-jersey</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>${peergreen-jaxrs-jersey.version}</version>
       <scope>provided</scope>
     </dependency>
 
