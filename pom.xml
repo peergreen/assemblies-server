@@ -84,6 +84,21 @@
       <url>https://forge.peergreen.com/nexus/content/repositories/releases/</url>
       <layout>default</layout>
     </repository>
+    <repository>
+      <id>peergreen.snapshot</id>
+      <name>Peergreen Snapshot Nexus</name>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <url>https://forge.peergreen.com/nexus/content/repositories/snapshots/</url>
+      <layout>default</layout>
+    </repository>
+
+
+
   </repositories>
 
 </project>
