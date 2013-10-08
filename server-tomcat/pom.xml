@@ -87,6 +87,7 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
+          <usePack200>${usePack200}</usePack200>
           <serverName>Peergreen Server Tomcat</serverName>
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.9.0.v20130529-1710</framework>
