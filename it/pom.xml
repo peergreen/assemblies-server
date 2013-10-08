@@ -24,7 +24,7 @@
 
   <name>Peergreen Assemblies :: Integration tests</name>
   <properties>
-    <pax.exam.version>3.0.0</pax.exam.version>
+    <pax.exam.version>3.3.0</pax.exam.version>
   </properties>
 
   <dependencies>
