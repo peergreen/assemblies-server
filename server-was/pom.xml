@@ -387,6 +387,20 @@
       <scope>provided</scope>
     </dependency>
 
+    <!-- JSTL -->
+    <dependency>
+      <groupId>org.ow2.spec.ee</groupId>
+      <artifactId>ow2-jstl-1.2.1-spec</artifactId>
+      <version>1.0.0-M1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.peergreen.jstl</groupId>
+      <artifactId>peergreen-jstl-taglibs</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+
     <!-- CDI API -->
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
