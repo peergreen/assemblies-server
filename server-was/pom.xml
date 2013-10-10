@@ -398,6 +398,7 @@
       <groupId>com.peergreen.jstl</groupId>
       <artifactId>peergreen-jstl-taglibs</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
 
@@ -421,11 +422,13 @@
       <groupId>com.peergreen.jsf</groupId>
       <artifactId>peergreen-jsf-mojarra</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.jsf</groupId>
       <artifactId>peergreen-jsf-mojarra-extensions-tomcat7</artifactId>
       <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
