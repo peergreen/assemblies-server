@@ -431,6 +431,19 @@
       <scope>provided</scope>
     </dependency>
 
+    <!-- EAR -->
+    <dependency>
+      <groupId>com.peergreen.ear</groupId>
+      <artifactId>peergreen-ear</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.peergreen.ear</groupId>
+      <artifactId>peergreen-ear-extensions-war</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
   <build>
