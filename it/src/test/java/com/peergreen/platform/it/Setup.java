@@ -46,7 +46,8 @@ public class Setup {
 
         return options(
                 junitBundles(),
-                systemProperty("org.ops4j.pax.logging.DefaultServiceLog.level").value("WARN")
+                systemProperty("org.ops4j.pax.logging.DefaultServiceLog.level").value("WARN"),
+                systemProperty("org.apache.felix.ipojo.extender.BootstrapQueueDebug").value("true")
         );
     }
 
