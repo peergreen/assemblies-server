@@ -43,6 +43,7 @@
     <ow2-spec.version>1.0.13</ow2-spec.version>
     <peergreen-db-h2.version>1.0.2-SNAPSHOT</peergreen-db-h2.version>
     <peergreen-jaxrs-jersey.version>1.0.1</peergreen-jaxrs-jersey.version>
+    <peergreen-jdbc.version>1.0.0-SNAPSHOT</peergreen-jdbc.version>
     <peergreen-persistence.version>1.0.2-SNAPSHOT</peergreen-persistence.version>
     <peergreen-transaction.version>1.0.2-SNAPSHOT</peergreen-transaction.version>
     <slf4j.version>1.7.2</slf4j.version>

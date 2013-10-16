@@ -386,6 +386,12 @@
       <version>${peergreen-db-h2.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>com.peergreen.jdbc</groupId>
+      <artifactId>peergreen-jdbc</artifactId>
+      <version>${peergreen-jdbc.version}</version>
+      <scope>provided</scope>
+    </dependency>
 
     <!-- JSTL -->
     <dependency>
