@@ -58,7 +58,7 @@
       <plugin>
         <groupId>com.peergreen.kernel</groupId>
         <artifactId>kernel-maven-plugin</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4-SNAPSHOT</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
