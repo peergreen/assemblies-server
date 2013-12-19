@@ -15,7 +15,7 @@
   <parent>
     <groupId>com.peergreen.assemblies</groupId>
     <artifactId>abstract-server</artifactId>
-    <version>1.0.0-RC2-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -39,18 +39,18 @@
     <jndi-service.version>1.0.1</jndi-service.version>
     <jotm-core.version>2.3.1-M1</jotm-core.version>
     <metadata-adapter.version>1.0.0</metadata-adapter.version>
-    <naming.version>1.0.2-SNAPSHOT</naming.version>
+    <naming.version>1.0.2</naming.version>
     <ow2-spec.version>1.0.13</ow2-spec.version>
-    <peergreen-db-h2.version>1.0.2-SNAPSHOT</peergreen-db-h2.version>
+    <peergreen-db-h2.version>1.0.2</peergreen-db-h2.version>
     <peergreen-jaxrs-jersey.version>1.0.1</peergreen-jaxrs-jersey.version>
-    <peergreen-jdbc.version>1.0.0-SNAPSHOT</peergreen-jdbc.version>
-    <peergreen-persistence.version>1.0.2-SNAPSHOT</peergreen-persistence.version>
-    <peergreen-transaction.version>1.0.2-SNAPSHOT</peergreen-transaction.version>
+    <peergreen-jdbc.version>1.0.0</peergreen-jdbc.version>
+    <peergreen-persistence.version>1.0.2</peergreen-persistence.version>
+    <peergreen-transaction.version>1.0.2</peergreen-transaction.version>
     <slf4j.version>1.7.2</slf4j.version>
     <scan.version>3.0.0-M2</scan.version>
-    <webcontainer-api.version>1.0.2-SNAPSHOT</webcontainer-api.version>
-    <webcontainer-base.version>1.0.2-SNAPSHOT</webcontainer-base.version>
-    <webcontainer-tomcat7.version>1.0.2-SNAPSHOT</webcontainer-tomcat7.version>
+    <webcontainer-api.version>1.0.2</webcontainer-api.version>
+    <webcontainer-base.version>1.0.2</webcontainer-base.version>
+    <webcontainer-tomcat7.version>1.0.2</webcontainer-tomcat7.version>
   </properties>
 
   <build>
@@ -58,7 +58,7 @@
       <plugin>
         <groupId>com.peergreen.kernel</groupId>
         <artifactId>kernel-maven-plugin</artifactId>
-        <version>1.0.4-SNAPSHOT</version>
+        <version>1.0.4</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
