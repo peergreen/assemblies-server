@@ -251,6 +251,7 @@
         <artifactId>kernel-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
+          <addExpiration>false</addExpiration>
           <specification>org.osgi/org.osgi.core/5.0.0</specification>
           <framework>org.eclipse.tycho/org.eclipse.osgi/3.9.0.v20130529-1710</framework>
           <levels>
