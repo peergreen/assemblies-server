@@ -22,14 +22,14 @@
   <groupId>com.peergreen.server</groupId>
   <artifactId>server</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>Peergreen Assemblies</name>
 
   <scm>
     <connection>scm:git:https://forge.peergreen.com/git/git/assemblies/server.git</connection>
     <developerConnection>scm:git:https://forge.peergreen.com/git/git/assemblies/server.git</developerConnection>
     <url>https://forge.peergreen.com/git/summary/?r=assemblies/server.git</url>
-    <tag>SERVER_1_0_0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
