@@ -15,7 +15,7 @@
   <parent>
     <artifactId>abstract-ee-server</artifactId>
     <groupId>com.peergreen.server</groupId>
-    <version>1.0.0-M4-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>../abstract-ee-server/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
