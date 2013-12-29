@@ -264,13 +264,13 @@
     <dependency>
       <groupId>org.ow2.util.pool</groupId>
       <artifactId>pool-enhanced</artifactId>
-      <version>2.0.1-SNAPSHOT</version>
+      <version>2.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.util.pool</groupId>
       <artifactId>pool-basic</artifactId>
-      <version>2.0.1-SNAPSHOT</version>
+      <version>2.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -311,27 +311,27 @@
     <dependency>
       <groupId>org.ow2.easybeans.osgi</groupId>
       <artifactId>easybeans-api</artifactId>
-      <version>3.0.0-M1-SNAPSHOT</version>
+      <version>3.0.0-M1</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.ow2.easybeans.osgi</groupId>
       <artifactId>easybeans-modules-core</artifactId>
-      <version>3.0.0-M1-SNAPSHOT</version>
+      <version>3.0.0-M1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.easybeans.osgi</groupId>
       <artifactId>easybeans-component-quartz</artifactId>
-      <version>3.0.0-M1-SNAPSHOT</version>
+      <version>3.0.0-M1</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>com.peergreen.ejb</groupId>
       <artifactId>peergreen-ejb-easybeans</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -397,13 +397,13 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jstl-1.2.1-spec</artifactId>
-      <version>1.0.0-M1-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.jstl</groupId>
       <artifactId>peergreen-jstl-taglibs</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -421,19 +421,19 @@
     <dependency>
       <groupId>org.ow2.spec.ee</groupId>
       <artifactId>ow2-jsf-2.2-spec</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.jsf</groupId>
       <artifactId>peergreen-jsf-mojarra</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.jsf</groupId>
       <artifactId>peergreen-jsf-mojarra-extensions-tomcat7</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -441,13 +441,13 @@
     <dependency>
       <groupId>com.peergreen.ear</groupId>
       <artifactId>peergreen-ear</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.peergreen.ear</groupId>
       <artifactId>peergreen-ear-extensions-war</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
