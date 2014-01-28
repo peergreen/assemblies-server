@@ -15,7 +15,7 @@
   <parent>
     <groupId>com.peergreen.assemblies</groupId>
     <artifactId>abstract-server</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -58,7 +58,7 @@
       <plugin>
         <groupId>com.peergreen.kernel</groupId>
         <artifactId>kernel-maven-plugin</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.5-SNAPSHOT</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
